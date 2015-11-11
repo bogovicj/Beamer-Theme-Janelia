@@ -38,14 +38,18 @@
 \setbeamercolor{enumerate item}{fg=HHMIBlack}
 \setbeamercolor{alerted text}{fg=HHMIGreenB}
 \setbeamercolor{section in toc}{fg=HHMIBlack}
+\setbeamercolor{description item}{fg=black}
 
 \setbeamertemplate{enumerate items}[default]
 \setbeamertemplate{itemize items}[default]
 
+%\setbeamertemplate{itemize item}{$\blacktriangleright$}
+%\setbeamertemplate{itemize subitem}{$\blacktriangleright$}
+    
 % set fonts
-\setbeamerfont{itemize/enumerate body}{size=\large}
-\setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
-\setbeamerfont{itemize/enumerate subsubbody}{size=\small}
+%\setbeamerfont{itemize/enumerate body}{size=\large}
+%\setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
+%\setbeamerfont{itemize/enumerate subsubbody}{size=\small}
 
 % make the itemize bullets pixelated >
 % \setbeamertemplate{itemize item}{
@@ -134,8 +138,8 @@
 			\node[anchor=north,text width=\slidewidth-1cm,inner xsep=0.5cm] at (0.5\slidewidth+1pt,\paperheight-0.25cm) {\includegraphics[width=3.8cm]{janelia-logo-whitewhite.pdf}};
 			
 			% draw the actual text
-			\node[anchor=south,text width=\slidewidth-1cm,inner xsep=0.5cm] at (0.5\slidewidth+1pt,5.5cm) {\color{HHMIWhite}\large\insertauthor};
-			\node[anchor=north,text width=\slidewidth-1cm,inner xsep=0.5cm] at (0.5\slidewidth,5.5cm) {\color{HHMIWhite}\Huge\textbf{\inserttitle}};
+			\node[anchor=south,text width=\slidewidth-1cm,inner xsep=0.5cm] at (0.5\slidewidth+1pt,5.25cm) {\color{HHMIWhite}\large\insertauthor};
+			\node[anchor=north,text width=\slidewidth-1cm,inner xsep=0.5cm] at (0.5\slidewidth,5.25cm) {\color{HHMIWhite}\Huge\textbf{\inserttitle}};
 			\node[anchor=south west] at (0.5cm,0cm) {\color{HHMIWhite}\tiny\insertsubtitle};
 			
 			% add the date in the corner

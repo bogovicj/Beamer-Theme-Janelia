@@ -5,10 +5,10 @@
 
 \usetheme{Janelia}
 
-\title{A New Beamer Theme That Works Well and Looks Great: Janelia}
+\title[Janelia Theme]{Beamer~~Theme:~~HHMI~~Janelia}
 \subtitle{A custom modern minimalist Beamer theme designed from scratch}
 \author{Stephan Saalfeld (based on Kenton Hamaluik)}
-\date{November 6, 2015}
+\date{April 19, 2017}
 
 \setcounter{showSlideNumbers}{1}
 
@@ -72,5 +72,49 @@
 				\item Woo, Beamer!
 			\end{itemize}
 		\end{frame}
+
+		
+		
+	\setbeamercolor{normal text}{bg=black,fg=white}
+	\setbeamercolor{description item}{fg=gray}
+	\usebeamercolor[fg]{normal text}
+
+	\section{Acknowledgements and Links}
+		\begin{frame}
+			\begin{textblock}{16}(0, -4.25) 
+				\includegraphics[width=\textwidth]{janelia.jpg}
+			\end{textblock}%
+			\begin{textblock}{7.5}(8, 0.5)
+				\footnotesize%
+				\begin{description}
+					\item[\textbf{The Lab:}]{John Bogovic, \textbf{Philipp Hanslovsky}, Larissa Heinrich, Shelby Morris, Crystal Di Pietro, Igor Pisarev, Stephanie Young}
+					\item[\textbf{Style:}]{\textbf{Kenton Hamaluik}, \textbf{Till Tantau}}
+					\item[\textbf{Funding:}]{HHMI Janelia}
+				\end{description}
+			\end{textblock}%
+			\begin{textblock}{14}(1, 14.85)%
+				\Large\bf
+				\href{https://github.com/saalfeldlab/Beamer-Theme-Janelia}{github.com/saalfeldlab/Beamer-Theme-Janelia}
+
+			\end{textblock}%
+		\end{frame}
+
+	\appendix\section{Appendix}
+	\newcounter{finalframe}
+	\setcounter{finalframe}{\value{framenumber}}
+
+	\setcounter{showSlideNumbers}{0}
+	\setcounter{showProgressBar}{0}
+
+	\setbeamercolor{normal text}{bg=,fg=black}
+	\usebeamercolor[fg]{normal text}
+
+		\begin{frame}{Appendix 1}
+			\begin{itemize}
+				\item{\emph{This slide is not on the counter}}
+			\end{itemize}
+		\end{frame}
+	
+	\setcounter{framenumber}{\value{finalframe}}
 
 \end{document}

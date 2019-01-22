@@ -92,6 +92,8 @@
 \setcounter{showSlideNumbers}{1}
 \newcounter{showSlideTotal}
 \setcounter{showSlideTotal}{1}
+\newcounter{showSectionTitle}
+\setcounter{showSectionTitle}{1}
 
 % use \makeatletter for our progress bar definitions
 % progress bar idea from http://tex.stackexchange.com/a/59749/44221
@@ -190,14 +192,16 @@
 				\fi
 			% don't show the progress bar?
 			\else
-				% section title in the bottom left
-				\node[anchor=south west] at(0cm,0cm) {\color{HHMIGrayB}\tiny\insertsection %
-				\ifx\insertsubsection\empty
-					%it is empty
-				\else
-					~| \insertsubsection%
-				\fi%
-				};
+				\ifnum \value{showSectionTitle}>0\relax%
+					% section title in the bottom left
+					\node[anchor=south west] at(0cm,0cm) {\color{HHMIGrayB}\tiny\insertsection %
+					\ifx\insertsubsection\empty
+						%it is empty
+					\else
+						~| \insertsubsection%
+					\fi%
+					};
+				\fi
 				% if we're showing slide numbers
 				\ifnum \value{showSlideNumbers}>0\relax%
 					% if slide totals are active

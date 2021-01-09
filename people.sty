@@ -1,0 +1,204 @@
+% the various libraries we will be using
+\usepackage{xfp}
+\usepackage[overlay,absolute]{textpos}
+
+\def\credit#1#2#3{%
+\begin{textblock}{3}(\fpeval{15-1.2*(#1)},0)
+\tiny\includegraphics[width=1cm]{figures/people/#2}
+
+#3%
+\end{textblock}}%
+
+\def\creditFunkeLab#1{%
+\credit{#1}{funkej.png}{J. Funke}%
+}%
+
+\def\creditFunke#1{%
+\credit{#1}{funkej.jpg}{J. Funke}%
+}%
+
+\def\creditBock#1{%
+\credit{#1}{bock.jpeg}{D. Bock}%
+}%
+
+\def\creditTuraga#1{%
+\credit{#1}{turaga.jpg}{S. Turaga}%
+}%
+
+\def\creditPape#1{%
+\credit{#1}{papec.png}{C. Pape}%
+}%
+
+\def\creditHeinrich#1{%
+\credit{#1}{heinrichl.png}{%
+\ifnum #1=0
+\hspace{-0.1em}%
+\fi%
+L. Heinrich}%
+}%
+
+\def\creditSheridan#1{%
+\credit{#1}{sheridan.jpg}{\hspace{-0.2em}A. Sheridan}%
+}%
+
+\def\creditLauritzen#1{%
+\credit{#1}{lauritzen.jpg}{\hspace{-0.3em}S. Lauritzen}%
+}%
+
+\def\creditOrdish#1{%
+\credit{#1}{ordish.jpeg}{C. Ordish}%
+}%
+
+\def\creditHaddad#1{%
+\credit{#1}{haddada.png}{A. Haddad}%
+}%
+
+\def\creditBuhmann#1{%
+\credit{#1}{buhmann.png}{\hspace{-0.3em}J. Buhmann}%
+}%
+
+\def\creditPerlman#1{%
+\credit{#1}{perlman.jpeg}{E. Perlman}%
+}%
+
+\def\creditHanslovsky#1{%
+\credit{#1}{hanslovskyp.png}{%
+\ifnum #1=0
+\hspace{-1.5em}%
+\else%
+\hspace{-0.75em}%
+\fi%
+P. Hanslovsky}%
+}%
+
+\def\creditJNI#1{%
+\credit{#1}{jni.png}{JNI}%
+}%
+
+\def\creditBogovic#1{%
+\credit{#1}{bogovicj.png}{J. Bogovic}%
+}%
+
+\def\creditJeter#1{%
+\credit{#1}{jeter.jpg}{J. Jeter}%
+}%
+
+\def\creditMeissner#1{%
+\credit{#1}{meissner.png}{\hspace{-0.75em}G. Meissner}%
+}%
+
+\def\creditAso#1{%
+\credit{#1}{aso.jpg}{Y. Aso}%
+}%
+
+\def\creditPisarev#1{%
+\credit{#1}{pisarevi.png}{I. Pisarev}%
+}%
+
+\def\creditPatrick#1{%
+\credit{#1}{patrick.png}{C. Patrick}%
+}%
+
+\def\creditOFlynn#1{%
+\credit{#1}{oflynn.png}{E. O'Flynn}%
+}%
+
+\def\creditHess#1{%
+\credit{#1}{hess.png}{H. Hess}%
+}%
+
+\def\creditXu#1{%
+\credit{#1}{xuc.jpg}{C. S. Xu}%
+}%
+
+\def\creditPang#1{%
+\credit{#1}{pang.jpg}{S. Pang}%
+}%
+
+\def\creditShtengel#1{%
+\credit{#1}{shtengel.jpg}{\hspace{-0.3em}G. Shtengel}%
+}%
+
+
+\def\creditPark#1{%
+\credit{#1}{parkg.jpg}{G. Park}%
+}%
+
+\def\creditPetruncio#1{%
+\credit{#1}{petruncio.png}{\hspace{-0.3em}A. Petruncio}%
+}%
+
+\def\creditArruda#1{%
+\credit{#1}{arruda.jpg}{R. Arruda}%
+}%
+
+\def\creditWeigel#1{%
+\credit{#1}{weigela.jpg}{A. Weigel}%
+}%
+
+\def\creditBennett#1{%
+\credit{#1}{bennett.jpg}{D. Bennett}%
+}%
+
+\def\creditAckerman#1{%
+\credit{#1}{ackermand.jpg}{%
+\ifnum #1=0
+\hspace{-1.4em}%
+\else%
+\hspace{-0.65em}%
+\fi%
+D. Ackerman}
+}%
+
+\def\creditBogovic#1{%
+\credit{#1}{bogovicj.png}{J. Bogovic}%
+}%
+
+\def\creditBetzig#1{%
+\credit{#1}{betzig.jpg}{E. Betzig}%
+}%
+
+\def\creditHoffman#1{%
+\credit{#1}{hoffmand.jpeg}{D. Hoffman}%
+}%
+
+\def\creditKorff#1{%
+\credit{#1}{korff.jpg}{W. Korff}%
+}%
+
+\def\creditJLS#1{%
+\credit{#1}{jls.jpg}{JLS}%
+}%
+
+\def\creditMorris#1{%
+\credit{#1}{morris.jpg}{S. Morris}%
+}%
+
+\def\creditSvoboda#1{%
+\credit{#1}{svoboda.png}{\hspace{-0.5em}K. Svoboda}%
+}%
+
+\def\creditWang#1{%
+\credit{#1}{wangt.png}{T. Wang}%
+}%
+
+\def\creditWeigert#1{%
+\credit{#1}{weigert.jpg}{M. Weigert}%
+}%
+
+\def\creditSchmidt#1{%
+\credit{#1}{schmidt.jpg}{U. Schmidt}%
+}%
+
+
+
+\def\creditSaalfeldlab{%
+\creditMorris{6}%
+\creditBogovic{5}%
+\creditHanslovsky{4}%
+\creditHeinrich{3}%
+\creditPisarev{2}%
+\creditOFlynn{1}%
+\creditPatrick{0}%
+}%
+

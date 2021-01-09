@@ -35,6 +35,11 @@
 %\usepackage{sourcecodepro}
 
 % set colours
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{itemize items}[default]
+
+\def\whiteframe{
 \setbeamercolor{itemize item}{fg=HHMIBlack}
 \setbeamercolor{itemize subitem}{fg=HHMIBlack}
 \setbeamercolor{enumerate item}{fg=HHMIBlack}
@@ -42,9 +47,23 @@
 \setbeamercolor{alerted text}{fg=HHMIGreenB}
 \setbeamercolor{section in toc}{fg=HHMIBlack}
 \setbeamercolor{description item}{fg=black}
+\setbeamercolor{normal text}{bg=,fg=black}
+\usebeamercolor[fg]{normal text}
+}
 
-\setbeamertemplate{enumerate items}[default]
-\setbeamertemplate{itemize items}[default]
+\def\blackframe{
+\setbeamercolor{itemize item}{fg=fg=HHMIGrayA}
+\setbeamercolor{itemize subitem}{fg=fg=HHMIGrayA}
+\setbeamercolor{enumerate item}{fg=fg=HHMIGrayA}
+\setbeamercolor{enumerate subitem}{fg=fg=HHMIGrayA}
+\setbeamercolor{alerted text}{fg=HHMIGreenB}
+\setbeamercolor{section in toc}{fg=fg=HHMIGrayA}
+\setbeamercolor{description item}{fg=fg=HHMIGrayA}
+\setbeamercolor{normal text}{bg=black,fg=white}
+\usebeamercolor[fg]{normal text}
+}
+
+\whiteframe
 
 %\setbeamertemplate{itemize item}{$\blacktriangleright$}
 %\setbeamertemplate{itemize subitem}{$\blacktriangleright$}

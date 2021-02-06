@@ -26,12 +26,13 @@
 }%
 
 \def\creditPape#1{%
-\credit{#1}{papec.png}{C. Pape}%
+\credit{#1}{papec.jpeg}{C. Pape}%
 }%
 
 \def\creditHeinrich#1{%
-\credit{#1}{heinrichl.png}{%
-\ifnum #1=0
+\credit{#1}{heinrichl.jpg}{%
+%\ifnum #1=0
+\ifdim #1 pt = 0pt
 \hspace{-0.1em}%
 \fi%
 L. Heinrich}%
@@ -62,8 +63,9 @@ L. Heinrich}%
 }%
 
 \def\creditHanslovsky#1{%
-\credit{#1}{hanslovskyp.png}{%
-\ifnum #1=0
+\credit{#1}{hanslovsky.jpg}{%
+%\ifnum #1=0
+\ifdim #1 pt = 0pt
 \hspace{-1.5em}%
 \else%
 \hspace{-0.75em}%
@@ -72,11 +74,11 @@ P. Hanslovsky}%
 }%
 
 \def\creditJNI#1{%
-\credit{#1}{jni.png}{JNI}%
+\credit{#1}{jni.jpeg}{JNI}%
 }%
 
 \def\creditBogovic#1{%
-\credit{#1}{bogovicj.png}{J. Bogovic}%
+\credit{#1}{bogovic.jpeg}{J. Bogovic}%
 }%
 
 \def\creditJeter#1{%
@@ -142,16 +144,13 @@ P. Hanslovsky}%
 
 \def\creditAckerman#1{%
 \credit{#1}{ackermand.jpg}{%
-\ifnum #1=0
+%\ifnum #1=0
+\ifdim #1 pt = 0pt
 \hspace{-1.4em}%
 \else%
 \hspace{-0.65em}%
 \fi%
 D. Ackerman}
-}%
-
-\def\creditBogovic#1{%
-\credit{#1}{bogovicj.png}{J. Bogovic}%
 }%
 
 \def\creditBetzig#1{%
@@ -219,7 +218,14 @@ D. Ackerman}
 }%
 
 \def\creditTrautman#1{%
-\credit{#1}{trautmane.png}{E. Trautman}%
+\credit{#1}{trautman.jpg}{%
+%\ifnum #1=0
+\ifdim #1 pt = 0pt
+\hspace{-0.6em}%
+\else%
+\hspace{-0.25em}%
+\fi%
+E. Trautman}%
 }%
 
 \def\creditZheng#1{%
@@ -227,7 +233,14 @@ D. Ackerman}
 }%
 
 \def\creditKainmueller#1{%
-\credit{#1}{kainmuellerd.png}{\hspace{-2em}D. Kainmueller}%
+\credit{#1}{kainmueller.jpeg}{%
+%\ifnum #1=0
+\ifdim #1 pt = 0pt
+\hspace{-1.6em}%
+\else%
+\hspace{-0.8em}%
+\fi%
+D. Kainmueller}%
 }%
 
 \def\creditScheffer#1{%
@@ -255,11 +268,29 @@ D. Ackerman}
 }%
 
 \def\creditPreibisch#1{%
-\credit{#1}{preibisch.jpeg}{\hspace{-0.75em}S. Preibisch}%
+\credit{#1}{preibisch.jpeg}{%
+%\ifnum #1=0
+\ifdim #1 pt = 0pt
+\hspace{-0.5em}%
+\else%
+\hspace{-0.25em}%
+\fi%
+S. Preibisch}%
 }%
 
 \def\creditHarrington#1{%
-\credit{#1}{harrington.jpeg}{\hspace{-1em}K. Harrington}%
+\credit{#1}{harrington.png}{%
+%\ifnum #1=0
+\ifdim #1 pt = 0pt
+\hspace{-1.1em}%
+\else%
+\hspace{-0.55em}%
+\fi%
+K. Harrington}%
+}%
+
+\def\creditHuang#1{%
+\credit{#1}{huang.png}{G. Huang}%
 }%
 
 

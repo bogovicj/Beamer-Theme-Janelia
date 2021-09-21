@@ -20,6 +20,8 @@
 \definecolor{HHMIGrayB}{RGB}{170,170,170}
 \definecolor{HHMIGrayC}{RGB}{220,220,220}
 
+
+
 % use Adobe's Source Pro fonts:
 % Source Serif Pro: http://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-US&event=displayFontPackage&code=1966
 % Source Sans Pro: http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1959
@@ -33,6 +35,8 @@
 %\usepackage{sourceserifpro}
 %\usepackage{sourcesanspro}
 %\usepackage{sourcecodepro}
+
+\setbeamertemplate{bibliography item}{\insertbiblabel}
 
 % set colours
 \setbeamertemplate{enumerate items}[default]
@@ -48,18 +52,30 @@
 \setbeamercolor{section in toc}{fg=HHMIBlack}
 \setbeamercolor{description item}{fg=black}
 \setbeamercolor{normal text}{bg=,fg=black}
+\setbeamercolor{bibliography item}{fg=green}
+\setbeamercolor{bibliography entry author}{fg=HHMIBlack}
+\setbeamercolor{bibliography entry title}{fg=HHMIBlack}
+\setbeamercolor{bibliography entry location}{fg=HHMIBlack}
+\setbeamercolor{bibliography entry note}{fg=HHMIBlack}
+\setbeamercolor{bibliography item}{fg=HHMIBlack}
 \usebeamercolor[fg]{normal text}
 }
 
 \def\blackframe{
-\setbeamercolor{itemize item}{fg=fg=HHMIGrayA}
-\setbeamercolor{itemize subitem}{fg=fg=HHMIGrayA}
-\setbeamercolor{enumerate item}{fg=fg=HHMIGrayA}
-\setbeamercolor{enumerate subitem}{fg=fg=HHMIGrayA}
+\setbeamercolor{itemize item}{fg=HHMIGrayA}
+\setbeamercolor{itemize subitem}{fg=HHMIGrayA}
+\setbeamercolor{enumerate item}{fg=HHMIGrayA}
+\setbeamercolor{enumerate subitem}{fg=HHMIGrayA}
 \setbeamercolor{alerted text}{fg=HHMIGreenB}
-\setbeamercolor{section in toc}{fg=fg=HHMIGrayA}
-\setbeamercolor{description item}{fg=fg=HHMIGrayA}
+\setbeamercolor{section in toc}{fg=HHMIGrayA}
+\setbeamercolor{description item}{fg=HHMIGrayA}
 \setbeamercolor{normal text}{bg=black,fg=white}
+\setbeamercolor{bibliography item}{fg=green}
+\setbeamercolor{bibliography entry author}{fg=HHMIGrayA}
+\setbeamercolor{bibliography entry title}{fg=HHMIGrayA}
+\setbeamercolor{bibliography entry location}{fg=HHMIGrayA}
+\setbeamercolor{bibliography entry note}{fg=HHMIGrayA}
+\setbeamercolor{bibliography item}{fg=HHMIGrayA}
 \usebeamercolor[fg]{normal text}
 }
 

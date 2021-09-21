@@ -3,10 +3,10 @@
 \usepackage[overlay,absolute]{textpos}
 
 \def\credit#1#2#3{%
-\begin{textblock}{3}(\fpeval{15-1.2*(#1)},0)
-\tiny\includegraphics[width=1cm]{figures/people/#2}
+\begin{textblock}{3}(\fpeval{1.2*(#1)},0)
+\Tiny\includegraphics[width=1cm]{figures/people/#2}
 
-#3%
+\makebox[1cm]{\centering #3}%
 \end{textblock}}%
 
 \def\creditFunkeLab#1{%
@@ -30,20 +30,15 @@
 }%
 
 \def\creditHeinrich#1{%
-\credit{#1}{heinrichl.jpg}{%
-%\ifnum #1=0
-\ifdim #1 pt = 0pt
-\hspace{-0.1em}%
-\fi%
-L. Heinrich}%
+\credit{#1}{heinrichl.jpg}{L. Heinrich}%
 }%
 
 \def\creditSheridan#1{%
-\credit{#1}{sheridan.jpg}{\hspace{-0.2em}A. Sheridan}%
+\credit{#1}{sheridan.jpg}{A. Sheridan}%
 }%
 
 \def\creditLauritzen#1{%
-\credit{#1}{lauritzen.jpg}{\hspace{-0.3em}S. Lauritzen}%
+\credit{#1}{lauritzen.jpg}{S. Lauritzen}%
 }%
 
 \def\creditOrdish#1{%
@@ -55,7 +50,7 @@ L. Heinrich}%
 }%
 
 \def\creditBuhmann#1{%
-\credit{#1}{buhmann.png}{\hspace{-0.3em}J. Buhmann}%
+\credit{#1}{buhmann.png}{J. Buhmann}%
 }%
 
 \def\creditPerlman#1{%
@@ -63,14 +58,7 @@ L. Heinrich}%
 }%
 
 \def\creditHanslovsky#1{%
-\credit{#1}{hanslovsky.jpg}{%
-%\ifnum #1=0
-\ifdim #1 pt = 0pt
-\hspace{-1.5em}%
-\else%
-\hspace{-0.75em}%
-\fi%
-P. Hanslovsky}%
+\credit{#1}{hanslovsky.jpg}{P. Hanslovsky}%
 }%
 
 \def\creditJNI#1{%
@@ -86,7 +74,7 @@ P. Hanslovsky}%
 }%
 
 \def\creditMeissner#1{%
-\credit{#1}{meissner.png}{\hspace{-0.75em}G. Meissner}%
+\credit{#1}{meissner.png}{G. Meissner}%
 }%
 
 \def\creditAso#1{%
@@ -118,7 +106,7 @@ P. Hanslovsky}%
 }%
 
 \def\creditShtengel#1{%
-\credit{#1}{shtengel.jpg}{\hspace{-0.3em}G. Shtengel}%
+\credit{#1}{shtengel.jpg}{G. Shtengel}%
 }%
 
 
@@ -127,7 +115,7 @@ P. Hanslovsky}%
 }%
 
 \def\creditPetruncio#1{%
-\credit{#1}{petruncio.png}{\hspace{-0.3em}A. Petruncio}%
+\credit{#1}{petruncio.png}{A. Petruncio}%
 }%
 
 \def\creditArruda#1{%
@@ -143,14 +131,7 @@ P. Hanslovsky}%
 }%
 
 \def\creditAckerman#1{%
-\credit{#1}{ackermand.jpg}{%
-%\ifnum #1=0
-\ifdim #1 pt = 0pt
-\hspace{-1.4em}%
-\else%
-\hspace{-0.65em}%
-\fi%
-D. Ackerman}
+\credit{#1}{ackermand.jpg}{D. Ackerman}
 }%
 
 \def\creditBetzig#1{%
@@ -174,7 +155,7 @@ D. Ackerman}
 }%
 
 \def\creditSvoboda#1{%
-\credit{#1}{svoboda.png}{\hspace{-0.5em}K. Svoboda}%
+\credit{#1}{svoboda.png}{K. Svoboda}%
 }%
 
 \def\creditWang#1{%
@@ -218,14 +199,7 @@ D. Ackerman}
 }%
 
 \def\creditTrautman#1{%
-\credit{#1}{trautman.jpg}{%
-%\ifnum #1=0
-\ifdim #1 pt = 0pt
-\hspace{-0.6em}%
-\else%
-\hspace{-0.25em}%
-\fi%
-E. Trautman}%
+\credit{#1}{trautman.jpg}{E. Trautman}%
 }%
 
 \def\creditZheng#1{%
@@ -233,14 +207,7 @@ E. Trautman}%
 }%
 
 \def\creditKainmueller#1{%
-\credit{#1}{kainmueller.jpeg}{%
-%\ifnum #1=0
-\ifdim #1 pt = 0pt
-\hspace{-1.6em}%
-\else%
-\hspace{-0.8em}%
-\fi%
-D. Kainmueller}%
+\credit{#1}{kainmueller.jpeg}{D. Kainmueller}%
 }%
 
 \def\creditScheffer#1{%
@@ -248,7 +215,7 @@ D. Kainmueller}%
 }%
 
 \def\creditHayworth#1{%
-\credit{#1}{hayworth.png}{\hspace{-0.25em}K. Hayworth}%
+\credit{#1}{hayworth.png}{K. Hayworth}%
 }%
 
 \def\creditLu#1{%
@@ -268,25 +235,11 @@ D. Kainmueller}%
 }%
 
 \def\creditPreibisch#1{%
-\credit{#1}{preibisch.jpeg}{%
-%\ifnum #1=0
-\ifdim #1 pt = 0pt
-\hspace{-0.5em}%
-\else%
-\hspace{-0.25em}%
-\fi%
-S. Preibisch}%
+\credit{#1}{preibisch.jpeg}{S. Preibisch}%
 }%
 
 \def\creditHarrington#1{%
-\credit{#1}{harrington.png}{%
-%\ifnum #1=0
-\ifdim #1 pt = 0pt
-\hspace{-1.1em}%
-\else%
-\hspace{-0.55em}%
-\fi%
-K. Harrington}%
+\credit{#1}{harrington.png}{K. Harrington}%
 }%
 
 \def\creditHuang#1{%

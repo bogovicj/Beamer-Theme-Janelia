@@ -5,9 +5,14 @@
 \def\credit#1#2#3{%
 \begin{textblock}{3}(\fpeval{15-1.2*(#1)},0)
 \Tiny\includegraphics[width=1cm]{figures/people/#2}
+\setlength\fboxsep{1pt}%
+\setlength\baselineskip{0pt}%
 
-\makebox[1cm]{\centering #3}%
-\end{textblock}}%
+\begin{beamercolorbox}[sep=0em,wd=1cm]{normal text}%
+\centering\strut #3
+\end{beamercolorbox}%
+\end{textblock}%
+}%
 
 \def\creditFunkeLab#1{%
 \credit{#1}{funkej.png}{J. Funke}%
@@ -191,7 +196,7 @@
 }%
 
 \def\creditKhairy#1{%
-\credit{#1}{khairyk.png}{K. Khairy}%
+\credit{#1}{khairy.jpeg}{K. Khairy}%
 }%
 
 \def\creditRobinson#1{%
@@ -262,6 +267,29 @@
 \credit{#1}{ecksteinn.jpeg}{N. Eckstein}%
 }%
 
+\def\creditForknall#1{%
+\credit{#1}{forknall.jpg}{N. Forknall}%
+}%
+
+\def\creditLudwig#1{%
+\credit{#1}{ludwig.jpg}{H. Ludwig}%
+}%
+
+\def\creditRymer#1{%
+\credit{#1}{rymer.jpg}{T. Rymer}%
+}%
+
+\def\creditPatton#1{%
+\credit{#1}{patton.jpg}{W. Patton}%
+}%
+
+\def\creditParekh#1{%
+\credit{#1}{parekh.jpg}{R. Parekh}%
+}%
+
+\def\creditSchneider#1{%
+\credit{#1}{schneiderm2.jpg}{M. Schneider}%
+}%
 
 \def\creditSaalfeldlab{%
 \creditMorris{6}%
